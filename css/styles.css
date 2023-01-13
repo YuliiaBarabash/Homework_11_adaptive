@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body,
+.main-textarea {
+  background-color: #e5e5e5;
+}
+
+ul {
+  list-style: none;
+}
+
+#container {
+  padding-bottom: 100px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+/* header */
+
+.header-inner {
+  min-height: 249px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* burger */
+.burger-icon {
+  display: none;
+}
+
+/* navigation */
+.nav-list {
+  display: flex;
+}
+
+.nav-item:not(:first-child) {
+  margin-left: 80px;
+}
+
+.nav-item-link {
+  font-size: 20px;
+  line-height: 1.2;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Carousel */
+
+.slick-slide img {
+  width: 100%;
+}
+
+.main-gallery {
+  margin-bottom: 42px;
+}
+
+.carousel {
+  margin-bottom: 42px;
+}
+
+.main-gallery-text {
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.main-heading {
+  padding: 16px 0;
+  margin-bottom: 60px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.main-block-wrap {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-block {
+  position: relative;
+  width: 500px;
+  min-height: 394px;
+  background: #000;
+}
+
+.first {
+  padding: 94px 50px;
+}
+
+.second {
+  padding: 50px;
+}
+
+.counter {
+  display: inline-flex;
+  width: 110px;
+  font-size: 48px;
+  line-height: 1;
+  color: #fff;
+}
+
+.main-block-text {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.main-message {
+  padding: 30px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1022px;
+  height: 120px;
+}
+
+.main-textarea {
+  resize: none;
+  outline: none;
+  border: none;
+  position: relative;
+  width: 720px;
+  height: 30px;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.main-button {
+  z-index: 3;
+  color: #fff;
+  text-transform: uppercase;
+  background: #000;
+  border-radius: 8px;
+  font-size: 28px;
+  line-height: 1.2;
+  width: 200px;
+  height: 60px;
+}
+::-webkit-input-placeholder { font-family: 'Montserrat';}
+
+
