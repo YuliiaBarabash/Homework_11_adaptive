@@ -146,6 +146,7 @@ ul {
 }
 
 .main-button {
+  text-align: center;
   padding: 15px 50px;
   text-decoration: none;
   z-index: 3;

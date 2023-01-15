@@ -124,6 +124,7 @@
 
   .main-text {
     font-size: 20px;
+    margin-bottom: 24px;
   }
 
   .main-heading {
@@ -158,6 +159,7 @@
   }
 
   #container {
+    padding-bottom: 102px;
     max-width: 355px;
   }
 
@@ -256,5 +258,73 @@
 
   .header.menu-open .nav-item:not(:last-child) {
     margin-bottom: 48px;
+  }
+
+  /* MAIN */
+
+  .main-heading {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  .main-block-text,
+  .second .main-block-text {
+    padding: 20px;
+  }
+
+  .counter {
+    display: block;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .main-block-wrap,
+  .main-block:not(:last-child) {
+    margin-bottom: 26px;
+  }
+
+  .main-block-text {
+    font-size: 16px;
+  }
+
+  .main-message {
+    padding: 0;
+    border: none;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 230px;
+  }
+
+  .main-textarea {
+    border: 1px solid #000;
+    padding: 20px;
+    resize: none;
+    outline: none;
+    width: 100%;
+    min-height: 150px;
+    margin: 0 0 19px 0;
+  }
+
+  ::placeholder {
+    text-align: center;
+  }
+
+  .main-button {
+    text-align: center;
+    padding: 16px 99px;
+    text-decoration: none;
+    z-index: 3;
+    color: #fff;
+    text-transform: uppercase;
+    background: #000;
+    border-color: #000;
+    border-radius: 8px;
+    font-size: 24px;
+    line-height: 1.2;
+    width: 100%;
+    height: 60px;
   }
 }
