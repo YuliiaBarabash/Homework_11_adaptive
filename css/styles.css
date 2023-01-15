@@ -59,6 +59,11 @@ ul {
   color: #000;
 }
 
+.nav-item-link:hover {
+  text-decoration: underline;
+  color: #686b6b;
+}
+
 /* Carousel */
 
 .slick-slide img {
@@ -145,6 +150,10 @@ ul {
   margin-right: 10px;
 }
 
+::placeholder {
+  font-family: 'Montserrat';
+}
+
 .main-button {
   text-align: center;
   padding: 15px 50px;
@@ -161,6 +170,11 @@ ul {
   height: 60px;
 }
 
-::-webkit-input-placeholder { font-family: 'Montserrat';}
+.main-button:hover {
+  background: #686b6b;
+  border-color: #686b6b;
+  color: #000;
+}
+
 
 
