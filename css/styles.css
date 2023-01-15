@@ -5,6 +5,7 @@
 }
 
 body {
+  padding: 0 30px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -25,6 +26,10 @@ ul {
 
 /* header */
 
+.slider-header {
+  display: none;
+}
+
 .header-inner {
   min-height: 249px;
   display: flex;
@@ -40,6 +45,7 @@ ul {
 /* navigation */
 .nav-list {
   display: flex;
+  align-items: center;
 }
 
 .nav-item:not(:first-child) {
@@ -59,19 +65,18 @@ ul {
   width: 100%;
 }
 
-.main-gallery {
+.carousel,
+.main-text {
   margin-bottom: 42px;
 }
 
-.carousel {
-  margin-bottom: 42px;
-}
-
-.main-gallery-text {
+.main-text {
   font-size: 28px;
   line-height: 1.2;
   text-align: center;
 }
+
+/* Chapters */
 
 .main-heading {
   padding: 16px 0;
@@ -93,16 +98,18 @@ ul {
 
 .main-block {
   position: relative;
-  width: 500px;
-  min-height: 394px;
+  max-width: 500px;
   background: #000;
 }
 
-.first {
+.main-block-text {
   padding: 94px 50px;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fff;
 }
 
-.second {
+.second .main-block-text {
   padding: 50px;
 }
 
@@ -114,44 +121,45 @@ ul {
   color: #fff;
 }
 
-.main-block-text {
-  font-size: 18px;
-  line-height: 1.2;
-  color: #fff;
-}
+/* Textarea */
 
 .main-message {
   padding: 30px;
   border: 1px solid #000;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 1022px;
+  max-width: 1022px;
   height: 120px;
 }
 
 .main-textarea {
+  padding: 10px;
   resize: none;
   outline: none;
   border: none;
   position: relative;
   width: 720px;
-  height: 30px;
+  height: 50px;
   font-size: 18px;
   line-height: 1.2;
+  margin-right: 10px;
 }
 
 .main-button {
+  padding: 15px 50px;
+  text-decoration: none;
   z-index: 3;
   color: #fff;
   text-transform: uppercase;
   background: #000;
+  border-color: #000;
   border-radius: 8px;
   font-size: 28px;
   line-height: 1.2;
   width: 200px;
   height: 60px;
 }
+
 ::-webkit-input-placeholder { font-family: 'Montserrat';}
 
 
