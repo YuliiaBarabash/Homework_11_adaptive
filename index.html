@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>LoGo Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="./img/" />
+    <link rel="icon" type="image/x-icon" href="./img/logo.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/slick.css" />
     <link rel="stylesheet" href="./css/slick-theme.css" />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -64,20 +66,20 @@
             <img class="carousel-img" src="./img/photo03.png" alt="photo01" />
           </div>
         </div>
-          <p class="main-text">
-            Suspendisse potenti. Curabitur in leo non odio hendrerit semper. Morbi
-            id tempor eros. Donec viverra tempor congue. Suspendisse quis felis
-            ultricies, egestas tellus non, semper est.Donec congue lorem odio, eu
-            ornare nisl malesuada tincidunt. Nullam ac leo est. Donec varius neque
-            vel ex consectetur aliquet. Aliquam venenatis vel tellus non
-            tincidunt. In viverra tellus ut libero dapibus ullamcorper. Donec non
-            feugiat massa.
-          </p>
+        <p class="main-text">
+          Suspendisse potenti. Curabitur in leo non odio hendrerit semper. Morbi
+          id tempor eros. Donec viverra tempor congue. Suspendisse quis felis
+          ultricies, egestas tellus non, semper est.Donec congue lorem odio, eu
+          ornare nisl malesuada tincidunt. Nullam ac leo est. Donec varius neque
+          vel ex consectetur aliquet. Aliquam venenatis vel tellus non
+          tincidunt. In viverra tellus ut libero dapibus ullamcorper. Donec non
+          feugiat massa.
+        </p>
         <h2 class="main-heading" id="history">history</h2>
         <div class="main-block-wrap">
           <div class="main-block first">
             <p class="main-block-text">
-              <span class="counter" akhi="1890">0</span>
+              <span class="counter" data-number="1890">0</span>
               Fusce rhoncus at sapien at sollicitudin. Quisque semper
               sollicitudin libero eget placerat. Aliquam quis laoreet tellus. In
               id congue lacus. Nulla vestibulum turpis et nisi consequat, non
@@ -87,7 +89,7 @@
           </div>
           <div class="main-block second">
             <p class="main-block-text">
-              <span class="counter" akhi="1920">0</span>
+              <span class="counter" data-number="1920">0</span>
               Aliquam erat volutpat. Curabitur et accumsan odio, eget
               scelerisque risus. Suspendisse ultrices mattis accumsan. In hac
               habitasse platea dictumst. In non nisl turpis. Sed sit amet purus
@@ -104,13 +106,11 @@
           <textarea
             class="main-textarea"
             name="message"
-            type="message"
             placeholder="type your message here"></textarea>
-          <a href="#" class="main-button">send</a>
+          <button class="main-button" type="button" name="send">send</button>
         </div>
       </main>
     </div>
-
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/scripts.js"></script>

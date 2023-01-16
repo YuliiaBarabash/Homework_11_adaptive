@@ -6,7 +6,7 @@
 
 body {
   padding: 0 30px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body,
@@ -102,7 +102,6 @@ ul {
 }
 
 .main-block {
-  position: relative;
   max-width: 500px;
   background: #000;
 }
@@ -129,52 +128,52 @@ ul {
 /* Textarea */
 
 .main-message {
-  padding: 30px;
+  padding: 10px 0 10px 10px;
   border: 1px solid #000;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   max-width: 1022px;
   height: 120px;
 }
 
+.main-message:focus-within {
+  border: none;
+  outline: 3px solid #686b6b;
+}
+
 .main-textarea {
-  padding: 10px;
+  font-family: "Montserrat";
   resize: none;
   outline: none;
   border: none;
-  position: relative;
   width: 720px;
-  height: 50px;
+  min-height: 100px;
+  height: 100%;
   font-size: 18px;
   line-height: 1.2;
-  margin-right: 10px;
 }
 
 ::placeholder {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
+  padding: 35px 30px;
 }
 
 .main-button {
-  text-align: center;
-  padding: 15px 50px;
-  text-decoration: none;
-  z-index: 3;
+  cursor: pointer;
+  margin-right: 30px;
   color: #fff;
   text-transform: uppercase;
   background: #000;
-  border-color: #000;
+  border: none;
   border-radius: 8px;
   font-size: 28px;
   line-height: 1.2;
   width: 200px;
-  height: 60px;
+  min-height: 60px;
 }
 
 .main-button:hover {
   background: #686b6b;
-  border-color: #686b6b;
-  color: #000;
+  color: #dbe1e1;
 }
-
-
-

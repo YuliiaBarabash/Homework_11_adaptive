@@ -1,24 +1,22 @@
 //  Carousel
 
-$(document).ready(function(){
-    $('.carousel').slick({
-        dots: false,
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        infinite: true
-    });
+$(document).ready(function () {
+  $(".carousel").slick({
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    infinite: true
+  });
 });
-
 
 // Burger
 
 let burger = document.querySelector("#burger-icon");
 let header = document.querySelector("#header");
-burger.onclick = function() {
-    header.classList.toggle("menu-open");
-}
-
+burger.onclick = function () {
+  header.classList.toggle("menu-open");
+};
 
 // Counter
 
@@ -27,7 +25,7 @@ const speed = 200;
 
 counters.forEach((counter) => {
   const animate = () => {
-    const value = +counter.getAttribute("akhi");
+    const value = +counter.getAttribute("data-number");
     const data = +counter.innerText;
 
     const time = value / speed;
