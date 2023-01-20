@@ -1,7 +1,7 @@
 @media screen and (max-width: 1024px) {
   #container {
     padding-bottom: 80px;
-    max-width: 919px;
+    max-width: 979px;
   }
 
   .header-inner {
@@ -21,6 +21,7 @@
 
   .header-logo svg {
     width: 80px;
+    height: 48px;
   }
 
   /* BURGER */
@@ -46,6 +47,12 @@
     background: #000;
   }
 
+  .burger-icon:hover .burger-icon-inner,
+  .burger-icon:hover::before,
+  .burger-icon:hover::after {
+    background-color: #686b6b;
+  }
+
   /* MENU OPEN */
 
   .header.menu-open {
@@ -59,15 +66,32 @@
     z-index: 2;
   }
 
+  .header.menu-open .header-inner {
+    max-width: 919px;
+    min-height: 316px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 111px;
+  }
+
+  .header.menu-open .burger-icon {
+    position: absolute;
+    top: 48px;
+  }
+
   .header.menu-open .burger-icon-inner,
   .header.menu-open .burger-icon::before,
   .header.menu-open .burger-icon::after {
     background: #fff;
   }
 
-  .header.menu-open .header-inner {
-    max-width: 919px;
-    margin: 0 auto;
+  .header.menu-open .header-logo {
+    top: 37px;
+  }
+
+  .header.menu-open .header-logo:hover .logo-svg {
+    fill: #a5a9a9;
   }
 
   .header.menu-open .logo-svg {
@@ -79,15 +103,18 @@
   }
 
   .header.menu-open .nav {
-    display: block;
+    padding-left: 30px;
+    display: flex;
   }
 
-  .header.menu-open .nav-list {
-    width: 424px;
-    position: absolute;
-    top: 144%;
-    left: 50%;
-    transform: translateX(-40%);
+  .header.menu-open .nav-item-link {
+    color: #fff;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .header.menu-open .nav-item-link:hover {
+    color: #a5a9a9;
   }
 
   .header.menu-open .nav-item:not(:first-child) {
@@ -112,8 +139,9 @@
     transition: transform 0.5s;
   }
 
-  .header.menu-open .nav-item-link {
-    color: #fff;
+  .header.menu-open .burger-icon:hover .burger-icon-inner,
+  .header.menu-open .burger-icon:hover::before {
+    background-color: #a5a9a9;
   }
 
   /* MAIN */
@@ -137,17 +165,20 @@
     flex-direction: column;
   }
 
-  .main-block {
-    max-width: 928px;
-  }
-
   .main-block-wrap,
   .main-block:not(:last-child) {
     margin-bottom: 32px;
   }
 
-  .main-block-text {
-    padding: 48px;
+  .main-block {
+    display: flex;
+    align-items: center;
+    min-height: 214px;
+    max-width: 928px;
+  }
+
+  .main-block:last-child {
+    min-height: 284px;
   }
 
   /* TEXTAREA */
@@ -160,13 +191,10 @@
 /* --------------------MOBILE--------------------- */
 
 @media screen and (max-width: 414px) {
-  body {
-    padding: 0 20px;
-  }
-
   #container {
+    padding: 0 20px;
     padding-bottom: 102px;
-    max-width: 355px;
+    max-width: 395px;
   }
 
   /* HEADER */
@@ -217,8 +245,16 @@
     min-height: 332px;
   }
 
+  .header.menu-open .burger-icon {
+    position: absolute;
+    right: 0;
+    top: 25px;
+  }
+
   .header.menu-open .header-inner {
-    margin-top: 5px;
+    min-height: 332px;
+    justify-content: flex-start;
+    padding-bottom: 44px;
     max-width: 355px;
   }
 
@@ -229,22 +265,23 @@
   .header.menu-open .header-logo {
     display: block;
     position: absolute;
-    top: 10px;
+    top: 20px;
     left: 40px;
+  }
+
+  .header.menu-open .nav {
+    padding-left: 0;
   }
 
   .header.menu-open .nav-list {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 106px;
-    position: absolute;
-    left: 40px;
-    top: 110px;
   }
 
   .header.menu-open .nav-item-link {
-    text-align: left;
+    font-size: 20px;
+    line-height: 1.2;
   }
 
   .header.menu-open .nav-item:not(:first-child) {
@@ -270,9 +307,8 @@
     margin-bottom: 24px;
   }
 
-  .main-block-text,
-  .second .main-block-text {
-    padding: 20px;
+  .main-block-text {
+    padding: 0 20px;
   }
 
   .counter {
@@ -284,6 +320,14 @@
   .main-block-wrap,
   .main-block:not(:last-child) {
     margin-bottom: 26px;
+  }
+
+  .main-block {
+    min-height: 276px;
+  }
+
+  .main-block:last-child {
+    min-height: 356px;
   }
 
   .main-block-text {
@@ -332,5 +376,13 @@
     line-height: 1.2;
     width: 100%;
     height: 60px;
+  }
+}
+
+/* чтобы текст не уезжал слишком вниз при маленьком разрешении на mobile */
+
+@media screen and (max-width: 350px) {
+  .main {
+    padding-top: 110px;
   }
 }
